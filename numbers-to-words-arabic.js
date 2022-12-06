@@ -1,9 +1,5 @@
 class NumberToWords
 {
-    static convertNumberArRiyal(number)
-    {
-        return this.convertNumberAr(number, 'ريال سعودي', 'ريالات سعودية', 'هللة', 'هللات');
-    }
 
     static convertNumberAr(
         number,
