@@ -1,5 +1,9 @@
 class NumberToWords
 {
+    static convertNumberArRiyal(number)
+    {
+        return this.convertNumberAr(number, 'ريال سعودي', 'ريالات سعودية', 'هللة', 'هللات');
+    }
 
     static convertNumberAr(
         number,
@@ -254,7 +258,7 @@ class NumberToWords
                         } else {
                             let twoy = Number(numberStr[1]) * 10;
                             let ony = Number(numberStr[2]);
-                            let twoyony = words[mf[place]][ony] + ' و' + words[mf[place]][twoy];
+                            twoyony = words[mf[place]][ony] + ' و' + words[mf[place]][twoy];
                         }
                         if (twoyony != '' && threey != 0) {
                             returnVal = returnVal + ' و' + twoyony;
